@@ -1,0 +1,62 @@
+// test for truthy/ falssy
+// falsy in javascript includes; false as a boolean, 0, null,undefined, Nan
+
+let p = null;
+let h;
+let k = 0;
+
+let testScore = 0,
+    isTrue = false,
+    studentName = "",
+    data = null,
+    animals = ["lion", "tiger"],
+    person = "Bright";
+
+test("check if falsy/ truthy", () => {
+    expect(testScore).toBeFalsy();
+    expect(isTrue).toBe(false);
+    expect(studentName).toBeFalsy();
+    expect(data).toBeNull();
+    expect(animals).not.toContain("leopard");
+    // expect(person).toMatch(/kry/i);
+});
+
+test("check is truthfulness", () => {
+    expect(p).toBeNull();
+    expect(k).toBeFalsy();
+    expect(h).toBeUndefined();
+});
+
+// test in loops
+// let value = [1, 2, 3, 4];
+// let friendName = ["ade", "timo", "kehinde"];
+// let objectArr = [{
+//         name: "Bright",
+//         age: 23,
+//     },
+//     {
+//         name: "Kehinde",
+//         age: 34,
+//     },
+// ];
+
+// const addNumber = (x, y) => {
+//     return x + y;
+// };
+
+// test.each(value)("interate", (num) => {
+//     expect(addNumber(4, num)).toBe(num + 4);
+// });
+
+// test.each(friendName)("print out each names", (n) => {
+//     expect(friendName.length === 3).toBe(true);
+// });
+
+// test.each(objectArr)("test case arrObject", (obj) => {
+//     expect(obj.age === 22).toBe(false);
+// });
+
+// let values = [28.38,73, 278,32]
+// test.each(values)("case 4: average", (num, total=0) =>{
+//     expect(total + num / values.length).toBe()
+// })
